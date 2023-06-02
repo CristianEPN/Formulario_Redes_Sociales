@@ -1,0 +1,163 @@
+/*GENERAL*/
+body{
+    background-image: url("img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+}
+
+
+section {
+    background-color: rgb(10,10,28,0.6);
+    border-radius: 15px;
+    color: white;
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo_p {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5%;
+}
+
+/*ENCABEZADO*/
+h1{
+    text-align: center;
+    margin-left: 5%;
+}
+
+#description {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*DATOS PERSONALES*/
+
+#titulo_registro {
+    text-align: center;
+    font-size: 35px;
+}
+
+.datos_registro {
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #email, #edad, #number {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    height: 2.375rem;
+    border-radius: 10px;
+}
+
+#name-label, #email-label, #edad-label, #number-label {
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+/*SELECCION*/
+select {
+    width: 89%;
+    margin-left: 5%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 20px;
+    height: 2.375rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*SELECCION MULTIPLE*/
+.clue {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255,225,255);
+    font-style: italic;
+}
+
+
+.input-check {
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    cursor: pointer;
+}
+
+/*RECOMENDADION*/
+.input-radio {
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    cursor: pointer;
+}
+
+/*COMENTARIOS*/
+#comments {
+    margin-left: 5%;
+    width: 89%;
+    margin-bottom: 20px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#submit{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #808080,
+        #919191,
+        #BDBDBD,
+        #F6F9FF    
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 7px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.65);
+    cursor: pointer;
+    align-items: center;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+button span {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}

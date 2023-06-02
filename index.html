@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="encabezado">
+    <h1 id="title">INTERACCION CON REDES SOCIALES</h1>
+    <p id="description">Esta encuesta permite conocer que tipo de contenido se consume en mayor demanda, ademas permite conocer cual es la red social más usada y asi poder brindar un mejor contenido</p>
+  </section>
+
+    <form id="survey-form" required>
+      <section class="datos_registro">
+        <p id="titulo_registro">Datos Personales</p>
+        <label id="name-label" for="name">Nombre</label>
+        <input id="name" type="text"  name="nombre" placeholder="Ingrese su nombre" required>
+      
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Ingrese su email" required>
+      
+        <label id="edad-label" for="edad">Edad</label>
+        <input id="edad" type="edad" name="edad" placeholder="Ingrese su edad" required>
+      
+        <label id="number-label" for="number">Número de Teléfono</label>
+        <input id="number" type="text" name="number" min="10" max="10" placeholder="Ingrese su número de celular" required>
+
+        <p id="titulo_p">¿Cual es tu red social favorita?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecciona una opción</option>
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="twitter">Twitter</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p id="titulo_p">¿Que prefieres ver en una red social?
+        <span class="clue">(Marque todo lo que corresponda)</span>
+        </p>
+          <label>
+            <input name="prefer" value="reels" type="checkbox" class="input-check"> Reels
+          </label>
+
+          <label>
+            <input name="prefer" value="historias/estados" type="checkbox" class="input-check"> Historias/Estados
+          </label>
+
+          <label>
+            <input name="prefer" value="post" type="checkbox" class="input-check"> Post
+          </label>
+
+          <label>
+            <input name="prefer" value="historias destacadas" type="checkbox" class="input-check"> Historias Destacadas
+          </label>
+
+          <label>
+            <input name="prefer" value="videos" type="checkbox" class="input-check"> Videos
+          </label>
+
+          <label>
+            <input name="prefer" value="fotos" type="checkbox" class="input-check"> Fotos
+          </label>
+        </select>
+
+        <p id="titulo_p">¿Cuál de estas redes sociales recomiendas para aprender?</p>
+          <label>
+            <input name="user-recommend" value="facebook" type="radio" class="input-radio"> Facebook
+          </label>
+
+          <label>
+            <input name="user-recommend" value="instagram" type="radio" class="input-radio"> Instagram
+          </label>
+
+          <label>
+            <input name="user-recommend" value="twitter" type="radio" class="input-radio"> Twitter
+          </label>
+        </select>
+
+        <p id="titulo_p">Comentarios o Sugerencias</p>
+        <textarea rows="30" id="comments" class="input-textarea" name="comment" placeholder="Ingresa tu comentario aqui..."></textarea>
+        <button id="submit" type="submit">
+          <span>Enviar</span>
+        </button>
+      </section>
+    </form>
+</body>
+</html>
